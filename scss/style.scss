@@ -77,7 +77,7 @@ background: rgba(255, 255, 0, .5);
 	
 }
 
-// form styles  ========
+// form styles login page ========
 
 form{
 	width: 250px;
@@ -172,7 +172,7 @@ input:hover::placeholder{
 
 
 
-// media queary ===============
+// media queary login page ===============
 
 
 	@media (min-width: 768px){
@@ -278,6 +278,68 @@ input:hover::placeholder{
 }
 
 
+// Daily special===========
+
+main{
+	color:white;
+	margin-top: 30px;
+	text-align: center;
+}
+
+
+// Flipping description ============
+
+.Special_container{
+	perspective: 900px;
+	margin: 30px auto;
+	width: 350px;
+	
+
+
+}
+
+
+.Special{
+	transform-style: preserve-3d;
+	transition: transform .5s ease-in;
+	text-align: center;
+	width: 350px;
+	height: 300px;
+	
+	
+
+}
+
+.Special img{
+	height: 100%;
+	width: 100%;
+	backface-visibility: hidden;
+	
+
+}
+
+.slide{
+	position: absolute;
+	background: pink;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transform: rotateY(180deg);
+	font-size: 1.347em;
+	padding: 10px 15px;
+	backface-visibility: hidden;
+
+}
+
+.slide p{
+	margin-top: 30px;
+}
+
+
+.Special:hover{
+	transform: rotateY(180deg);
+}
 
 
 
