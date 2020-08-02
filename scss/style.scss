@@ -1,0 +1,287 @@
+// Basic syles==============
+
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	// Photo by PJ Gal-Szabo on Unsplash
+	background-color: lightgrey;
+	background: url(../images/burgerbg.jpg) no-repeat top center;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Noto Sans TC', sans-serif;
+	line-height: 1.5;
+
+
+
+
+}
+
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+img{
+	max-width: 100%;
+}
+
+// header layout styles==============
+
+header{
+	background: rgba(255, 255, 255, 0.7);
+	text-align: center;
+
+}
+
+header h1{
+	padding: 10px 0;
+	color: red;
+	text-transform: uppercase;
+	
+}
+
+
+.main-nav li{
+	margin: 5px 0;
+}
+
+.main-nav li a{
+	display: block;
+	padding: 10px 0;
+	
+}
+
+.main-nav li a:hover{
+background: rgba(255, 255, 0, .5);
+
+}
+
+.main-nav a::after,
+.main-nav a::before{
+	content:url(../images/tomato.png);
+	padding: 0 15px;
+
+	
+}
+
+// form styles  ========
+
+form{
+	width: 250px;
+	margin: 30px auto;
+	text-align: center;
+	color: white;
+	
+}
+
+form h2{
+	margin-bottom: 40px;
+}
+
+input{
+	display: block;
+	padding: 10px;
+	margin: 20px 0;
+	width: 100%;
+	font-size: 1.5em;
+	background: green;
+	border: none;
+	
+}
+
+
+input:focus{
+	border-bottom: 2px solid white;
+}
+
+::placeholder{
+	color: white;
+	transition: transform 1s ease-in;
+	
+}
+
+input:hover::placeholder{
+	transform: translateX(110%);
+}
+
+.btn{
+	cursor: pointer;
+	width: 50%;
+	padding: 15px;
+	font-size: 18px;
+	background: none;
+	color: white;
+}
+
+.btn:active{
+	background:rgba(255, 255, 255, 0.7); 
+	color: black;
+}
+
+.mission{
+	color: white;
+	text-align: center;
+}
+
+.mission h3{
+	font-size: 2em;
+	margin-bottom: 1em;
+	
+}
+
+.mission p{
+	font-size: 1.234em;
+}
+
+
+
+.belchers{
+	width: 100%;
+	margin-top: 40px;
+	
+	
+
+
+}
+
+
+
+
+// clear fix=============
+
+.clrfx::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+
+
+
+
+// media queary ===============
+
+
+	@media (min-width: 768px){
+
+
+	.main-nav{
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+
+	.main-nav li a:hover{
+		background:none; 
+		color: rgba(5, 25, 255, 1);
+	
+	}
+
+	.main-nav a::after,
+	.main-nav a::before{
+	content:url(../images/tomato.png);
+	padding: 0;
+
+	}
+	
+
+	.belch-container{
+		text-align: center;
+	}
+
+	.belchers{
+		max-width: 400px;
+		display: inline-block;
+
+
+		
+	}
+
+}
+
+
+
+
+
+
+@media (min-width: 1024px){
+
+	header{
+		display: flex;
+	}
+
+	header h1{
+		margin: auto;
+	}
+
+	nav{
+		margin-left: auto;
+	}
+
+	.main-nav{
+		display: flex;
+		
+
+	}
+
+	.main-nav li{
+		margin-right: 50px;
+	}
+
+	.main-nav li a:hover{
+		background:none; 
+		color: rgba(5, 25, 255, 1);
+	
+	}
+
+	form{
+		float: left;
+		margin: 1em 0 0 1em;
+	}
+
+	.mission{
+	float: right;
+	width: 60%;
+	color: white;
+	}
+
+	.mission h3{
+	font-size: 6em;
+	text-align: center;
+	margin-bottom: 10px;
+	}
+
+	.mission p{
+	font-size: 1.234em;
+	}
+
+	.belch-container{
+		text-align: left;
+	}
+	
+	
+
+}
+
+
+
+
+
+
+
+
+
