@@ -17,6 +17,11 @@ body {
   line-height: 1.5;
 }
 
+#wrapper {
+  min-height: 100%;
+  margin-bottom: -55px;
+}
+
 ul {
   list-style: none;
 }
@@ -60,9 +65,13 @@ header h1 {
   padding: 0 15px;
 }
 
+main {
+  padding: 0 1em;
+}
+
 form {
   width: 250px;
-  margin: 30px auto;
+  margin: 10px auto;
   text-align: center;
   color: white;
 }
@@ -210,51 +219,82 @@ input:hover::placeholder {
     text-align: left;
   }
 }
-main {
+.main-special {
+  margin-top: 40px;
+}
+
+main h2 {
+  text-align: center;
   color: white;
-  margin-top: 30px;
-  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 2em;
 }
 
-.Special_container {
-  perspective: 900px;
-  margin: 30px auto;
-  width: 350px;
-}
-
-.Special {
-  transform-style: preserve-3d;
-  transition: transform 0.5s ease-in;
-  text-align: center;
-  width: 350px;
-  height: 300px;
-}
-
-.Special img {
-  height: 100%;
+.burger-container img {
   width: 100%;
+}
+
+.d-space {
+  perspective: 700px;
+  max-width: 500px;
+  float: left;
+}
+
+.flip-container {
+  transition: transform 1s ease-in;
+  transform-style: preserve-3d;
+}
+
+.burger-container {
   backface-visibility: hidden;
 }
 
-.slide {
+.description {
   position: absolute;
-  background: pink;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  background: pink;
+  padding: 15px 10px;
+  text-align: center;
   transform: rotateY(180deg);
-  font-size: 1.347em;
-  padding: 10px 15px;
   backface-visibility: hidden;
+  line-height: 3;
+  overflow: auto;
+  font-size: 1.234em;
 }
 
-.slide p {
-  margin-top: 30px;
-}
-
-.Special:hover {
+.flip-container:hover {
   transform: rotateY(180deg);
+}
+
+.bob-image {
+  max-width: 500px;
+  float: right;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.bob-image img {
+  transition: transform 0.5s ease-in;
+}
+
+.bob-image img:hover {
+  transform: scale(1.5);
+}
+
+.icons {
+  width: 50px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer img {
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
